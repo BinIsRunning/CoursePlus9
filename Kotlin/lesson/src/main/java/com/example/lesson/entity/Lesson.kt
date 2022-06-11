@@ -1,6 +1,6 @@
 package com.example.lesson.entity
 
-internal class Lesson constructor(var date: String, var content: String, var state: State) {
+internal class Lesson constructor(var date: String?, var content: String?, var state: State?) {
     enum class State {
         PLAYBACK {
             override fun stateName(): String {
